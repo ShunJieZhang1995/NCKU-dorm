@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style type="text/css"> 
 		button{
+			position: relative;
 			width: 80%;
 			height: 60px;
 			left: 10%;
@@ -13,6 +14,40 @@
 			margin-bottom: 5%;
 			margin-top: 5%;
 		}
+		html, body {
+    /* 設定body高度為100% 拉到視窗可視的大小 */
+    height: 100%;
+}
+
+#id_wrapper {
+    /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+    min-height: 100%;
+    /* 位置設為relative, 作為footer區塊位置的參考 */
+    position: relative;
+}
+
+#id_header {
+    /* 設定header的高度 */
+    height: 40px;
+    box-sizing: border-box;
+}
+
+#id_content {
+    /* 留出header及footer區塊的空間 */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#id_footer {
+    /* 設定footer的高度 */
+    height: 40px;
+    box-sizing: border-box;
+    /* 設定footer絕對位置在底部 */
+    position: absolute;
+    bottom: 0;
+    /* 展開footer寬度 */
+    width: 100%;
+}
 		</style> 
 </head>
 
@@ -22,10 +57,10 @@
       Header Block
     </div> <!-- /id_header -->
     <div id="id_content">
-    <button onclick="location.href='http://dorm.osa.ncku.edu.tw/index_stu.php'">床位查詢</button>
-	<button onclick="location.href='https://xcv123321.github.io/NCKU-dorm/map.html'">周遭地圖資訊</button>
-	<button onclick="location.href='http://www.cc.ncku.edu.tw/dorm/'">宿網管理系統</button>
-	<button onclick="location.href='https://school.bot.com.tw/twbank.net/index.aspx?pgid=3'">台灣銀行學雜費入口網</button>
+    <button onclick="location.href='http://dorm.osa.ncku.edu.tw/index_stu.php'">111</button>
+	<button onclick="location.href='https://xcv123321.github.io/NCKU-dorm/map.html'">222</button>
+	<button onclick="location.href='http://www.cc.ncku.edu.tw/dorm/'">333</button>
+	<button onclick="location.href='https://school.bot.com.tw/twbank.net/index.aspx?pgid=3'">444</button>
     </div> <!-- /id_content -->
     <footer id="id_footer">
       Footer Block
